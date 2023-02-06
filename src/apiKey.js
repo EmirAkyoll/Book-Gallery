@@ -1,1 +1,2 @@
-export const API_KEY = "pS9abLnPF9qjmA46A5UfIHjNGyJb1GT8";
+export const API_KEY = "YOUR_KEY";
+//For your own key => https://developer.nytimes.com/
