@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+$white: #fff;
+$black: #000;
+$phone-width: 500px;
+$tablet-width: 1200px;
+
+// :root { font-size: 10px; };
+
+@mixin flex-center($direction:row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    @content
+};
+
+@mixin phone-screen {
+    @media (max-width: $phone-width) {
+      @content;
+    }
+};
+
+@mixin tablet-screen {
+    @media (min-width: $phone-width) and (max-width: $tablet-width) {
+      @content;
+    }
+};
